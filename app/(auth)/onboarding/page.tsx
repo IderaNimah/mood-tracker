@@ -35,14 +35,28 @@ const Onboarding = () => {
               />
             </div>
 
-            <div>
-              <Image
-                src="/assets/avatar-placeholder.svg"
-                alt="avatar"
-                width={100}
-                height={100}
-                className="w-auto h-auto cursor-pointer"
-              />
+            <div className="flex  gap-6">
+              {/* Avatar Image */}
+              <div>
+                <Image
+                  src="/assets/avatar-placeholder.svg"
+                  alt="avatar"
+                  width={60}
+                  height={60}
+                  className=" cursor-pointer object-cover rounded-full"
+                />
+              </div>
+
+              {/* Text + Button Column */}
+              <div className="flex flex-col gap-2">
+                <h3 className="text-lg  text-[#21214D]">
+                  Upload Image
+                </h3>
+                <p className="text-sm text-[#57577B]">Max 250KB, PNG or JPEG</p>
+                <button className="w-fit font-semibold px-2 py-2 text-[#21214D] rounded-lg border-1 border-[#21214D]cursor-pointer">
+                  Upload
+                </button>
+              </div>
             </div>
 
             <button
