@@ -41,12 +41,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body className={`${redditSans.variable} antialiased`}>{children}</body>
+      <body
+        className={`${redditSans.variable} antialiased bg-[linear-gradient(to_bottom,#FAFAFF,#E0E0FF)] min-h-screen`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
